@@ -37,7 +37,7 @@ const OnboardingForm: React.FC<OnboardingFormProps> = ({ onSubmit, loading, erro
     <div className="container">
       <h1>Bridge Aid</h1>
       <p style={{ textAlign: 'center', marginBottom: '30px', color: '#7f8c8d', fontSize: '1.1rem' }}>
-        Find local social services and get a clear action plan
+        Answer a few questions to connect with relevant local services.
       </p>
 
       {error && <div className="error">{error}</div>}
@@ -87,10 +87,10 @@ const OnboardingForm: React.FC<OnboardingFormProps> = ({ onSubmit, loading, erro
             required
           >
             <option value="">Select income bracket</option>
-            <option value="very_low">Very Low (Below poverty line)</option>
-            <option value="low">Low Income</option>
-            <option value="moderate">Moderate Income</option>
-            <option value="above_moderate">Above Moderate</option>
+            <option value="very_low">&lt; $15,000</option>
+            <option value="low">$15,000 – $30,000</option>
+            <option value="moderate">$30,000 – $60,000</option>
+            <option value="above_moderate">$60,000+</option>
           </select>
         </div>
 
